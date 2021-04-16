@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+    <script src="RichardDonato_JSON.js"></script>
+    <link rel="stylesheet" href="RichardDonato.css">
+</head>
+<body>
+    <h2>Task Planner</h2>
+    <div>
+    <form>
+        <label>Employee ID</label>
+        <input type="text" name="empid" id="empid"><br/>
+        <label>Task ID</label>
+        <input type="text" name="taskId" id="taskId"><br/>
+        <label>Task Description</label>
+        <input type="text" name="desc" id="desc"><br/>
+        <label>DeadLine</label>
+        <input type="text" name="deadline" id="deadline"><br/> <br>
+
+        <input type="button" id="button"value="Add Task" onclick="onFormSubmit()" />
+       
+    </form>
+</div>
+ <hr/>
+<div class="tasklist">
+    <h2>List Task</h2>
+
+    <table class="t1" id="taskDetails">
+        <thead>
+            <tr class="t1">
+                <th>Employee ID</th>
+                <th>Task ID</th>
+                <th>Task</th>
+                <th>DeadLine</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
